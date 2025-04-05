@@ -1,0 +1,109 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  padding: 2rem;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-texto {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.input-texto:focus {
+  border-color: #007bff;
+}
+
+.botao-adicionar {
+  background: #007bff;
+  color: white;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.botao-adicionar:hover {
+  background: #0056b3;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.item {
+  background: #f8f9fa;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.botao-excluir {
+  background: none;
+  border: none;
+  color: #dc3545;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.botao-excluir:hover {
+  transform: scale(1.1);
+}
+
+.mensagem-vazia {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
